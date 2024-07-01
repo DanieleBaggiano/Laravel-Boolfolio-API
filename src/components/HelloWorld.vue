@@ -22,10 +22,14 @@ export default {
 </script>
 
 <template>
-  <div class="" v-for="item in ProjectCard">
-    {{ item.title }}
-    {{ item.description }}
-    {{ item.slug }}
+  <div class="d-flex flex-column align-items-center p-3">
+    <div class="card m-3" v-for="item in ProjectCard">
+      <div class="card-body">
+        <h5 class="card-title">{{ item.title }}</h5>
+        <p class="card-text">{{ item.description }}</p>
+        <p class="card-text">{{ item.slug }}</p>
+      </div>
+    </div>
   </div>
 </template>
 

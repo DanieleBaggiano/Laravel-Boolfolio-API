@@ -61,6 +61,7 @@ export default {
             <h5 class="card-title">{{ item.title }}</h5>
             <p class="card-text">{{ item.description }}</p>
             <p class="card-text">{{ item.slug }}</p>
+            <router-link :to="`/projects/${item.id}`">View Details</router-link>
           </div>
         </div>
       </div>
